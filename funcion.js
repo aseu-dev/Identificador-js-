@@ -1,7 +1,7 @@
 function isInteger(valor) {
 
     valor = parseInt(valor)
-    if(isNaN(valor)){
+    if(typeof(valor) ==  'number'){
         return false
     }
 
@@ -9,16 +9,16 @@ function isInteger(valor) {
 function identificador() {
 
     let nombre = prompt('Ingrese su nombre');
-    let terminar = (nombre == '') ? close() : null;
-    let nombre2 = prompt('Ingrese su segundo nombre, en caso de que lo posea');
+    let salida = (nombre == '')? close() : null; 
+    prompt('Ingrese su segundo nombre, en caso de que lo posea');
     let apellido = prompt('Ingrese su apellido');
     while (true) {
 
-        var dni = prompt('Ingrese su dni')
+        var dni = prompt('Ingrese su dni');
         if(dni == ''){
 
-            alert('Debes ingresar tu dni')
-
+            alert('Debes ingresar tu dni');
+            continue
         }
         else if(isInteger(dni) == false){
 
