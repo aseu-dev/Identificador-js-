@@ -34,7 +34,7 @@ function identificador() {
             break
         }
     };
-    let id = 'Tu ID es: ' + nombre + String(apellido.length) + String(dni.substr(1,3))
+    let id = 'Tu ID es: ' + nombre + String(apellido.length) + String(dni.substr(0,3))
     alert(id)
 }
 identificador()
