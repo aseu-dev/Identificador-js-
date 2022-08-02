@@ -1,7 +1,7 @@
 function isInteger(valor) {
 
     valor = parseInt(valor)
-    if(typeof(valor) ==  'number'){
+    if(typeof(valor) !=  'number'){
         return false
     }
 
@@ -9,7 +9,7 @@ function isInteger(valor) {
 function identificador() {
 
     let nombre = prompt('Ingrese su nombre');
-    let salida = (nombre == '')? close() : null; 
+    let salida = (nombre == '') ? close() : null; 
     prompt('Ingrese su segundo nombre, en caso de que lo posea');
     let apellido = prompt('Ingrese su apellido');
     while (true) {
