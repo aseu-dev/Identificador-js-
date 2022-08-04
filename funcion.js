@@ -16,29 +16,25 @@ function identificador() {
 
     prompt('Ingrese su segundo nombre, en caso de que lo posea');
     let apellido = prompt('Ingrese su apellido');
-    while (true) {
+    while (true){
         var dni = prompt('Ingrese su dni');
         if(dni == ''){
-
             alert('Debes ingresar tu dni');
-            continue
+            continue;
         }
         else if(isInteger(dni) == false){
-
             alert('El DNI solo debe contener numeros');
-            continue
+            continue;
         }
         else if(dni.length < 7 || dni.length > 8){
-
             alert('Tu DNI debe tener entre 7 y 8 numeros');
-
         }
         else{
-            break
+            break;
         }
     };
-    let id = 'Tu ID es: ' + nombre + String(apellido.length) + String(dni.substr(0,3))
-    alert(id)
+    let id = 'Tu ID es: ' + nombre + String(apellido.length) + String(dni.substr(0,3));
+    alert(id);
     }
 }
 identificador()
