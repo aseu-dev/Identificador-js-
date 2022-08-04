@@ -9,7 +9,11 @@ function isInteger(valor) {
 function identificador() {
 
     let nombre = prompt('Ingrese su nombre');
-    let salida = (nombre == '') ? close() : null; 
+   if(nombre == ''){
+        close();
+   } 
+   else{
+
     prompt('Ingrese su segundo nombre, en caso de que lo posea');
     let apellido = prompt('Ingrese su apellido');
     while (true) {
@@ -36,5 +40,6 @@ function identificador() {
     };
     let id = 'Tu ID es: ' + nombre + String(apellido.length) + String(dni.substr(0,3))
     alert(id)
+    }
 }
 identificador()
