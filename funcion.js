@@ -17,7 +17,6 @@ function identificador() {
     prompt('Ingrese su segundo nombre, en caso de que lo posea');
     let apellido = prompt('Ingrese su apellido');
     while (true) {
-
         var dni = prompt('Ingrese su dni');
         if(dni == ''){
 
